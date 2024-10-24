@@ -1,0 +1,54 @@
+.Dni {
+    display: inline;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.MA {
+    display: inline;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(20, 10, 10);
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+    margin-left: 50px;
+    padding-right: 50px;
+    font-size: 130px;
+    padding-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.patente {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.patente button {
+    margin-top: 25px;
+}
+.homebg{
+    background-color: rgb(132, 197, 232);
+    height: 55vh;
+    font-family: "Reddit Sans", sans-serif;
+}

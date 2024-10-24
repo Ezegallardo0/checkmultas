@@ -1,0 +1,45 @@
+.Nav {
+    background-color: #64A4BA;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Reddit Sans", sans-serif;
+}
+
+h1 {
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 50px;
+
+}
+
+.In {
+    display: inline-block;
+    background-color: #E8DD89;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 130px;
+}
+
+.Cr {
+    display: inline-block;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 130px;
+}
+.buton{
+
+}
+.buton button {
+    margin-right: 15px;
+    margin-top: 25px;
+}
