@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .Dni {
     display: inline;
     border-radius: 5px;
@@ -7,6 +9,11 @@
     padding: 10px;
     width: 200px;
     height: 50px;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: rgb(182, 181, 181);
+    background-color: white;
 }
 
 .MA {
@@ -21,6 +28,9 @@
     background-color: rgb(20, 10, 10);
     color: aliceblue;
     margin-left: 50px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
 }
 
 h2 {
@@ -30,11 +40,17 @@ h2 {
     padding-right: 50px;
     font-size: 130px;
     padding-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 p {
     text-align: center;
     font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
 }
 
 .patente {
@@ -47,7 +63,8 @@ p {
 .patente button {
     margin-top: 25px;
 }
-.homebg{
+
+.homebg {
     background-color: rgb(132, 197, 232);
     height: 55vh;
     font-family: "Reddit Sans", sans-serif;
