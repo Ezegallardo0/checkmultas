@@ -67,6 +67,9 @@ h2 {
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .uni {
@@ -76,11 +79,6 @@ h2 {
     font-weight: 900;
 }
 
-.consultas button {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
 
 .patente {
     display: flex;
@@ -97,41 +95,21 @@ h2 {
     background-color: rgb(132, 197, 232);
     height: 60vh;
     font-family: "Reddit Sans", sans-serif;
+    text-align: center;
 }
 
 .cheq {
     background-color: aliceblue;
-    margin-left: 10%;
     margin-top: 30px;
     height: 170px;
     width: 25%;
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
-}
-
-.cheqp {
-    color: rgb(0, 0, 0);
-    margin-left: 20px;
-    padding-top: 1px;
-}
-
-.cheqh {
     color: rgb(0, 0, 0);
     padding-top: 68px;
-    margin-left: 20px;
-}
-
-.resh {
-    color: rgb(0, 0, 0);
-    padding-top: 68px;
-    margin-left: 20px;
-}
-
-.creah {
-    color: rgb(0, 0, 0);
-    padding-top: 68px;
-    margin-left: 20px;
+    margin-left: 10%;
+    text-align: center;
 }
 
 .res {
@@ -142,12 +120,10 @@ h2 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
-}
-
-.resp {
     color: rgb(0, 0, 0);
+    padding-top: 68px;
     margin-left: 20px;
-    padding-top: 1px;
+    text-align: center;
 }
 
 .crea {
@@ -159,6 +135,9 @@ h2 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
+    color: rgb(0, 0, 0);
+    padding-top: 68px;
+    text-align: center;
 }
 
 .config {
@@ -212,11 +191,9 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
     text-align: center;
-}
-
-.monih {
     padding-top: 35px;
 }
+
 
 .Ahorra {
     background-color: aliceblue;
@@ -228,9 +205,6 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
     text-align: center;
-}
-
-.ahr {
     padding-top: 35px;
 }
 
@@ -244,11 +218,9 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
     text-align: center;
-}
-
-.gfh {
     padding-top: 35px;
 }
+
 
 .Notif {
     background-color: aliceblue;
@@ -260,8 +232,6 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
     text-align: center;
-}
-
-.notifh {
     padding-top: 35px;
 }
+
