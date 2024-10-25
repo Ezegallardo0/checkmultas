@@ -150,6 +150,9 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+.Cards2{
+    display: flex;
+}
 
 .xq {
     background-color: rgb(174, 172, 172);
@@ -181,57 +184,50 @@ h2 {
     padding: 10px;
 }
 
-.Moni {
+.card2{
     background-color: aliceblue;
-    margin-left: 10%;
     margin-top: 30px;
-    height: 100px;
-    width: 25%;
+    height: 130px;
+    width: 90%;
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
     text-align: center;
     padding-top: 35px;
 }
-
-
-.Ahorra {
-    background-color: aliceblue;
-    margin-left: 10%;
-    margin-top: 30px;
-    height: 100px;
-    width: 25%;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    border-radius: 30px;
-    text-align: center;
-    padding-top: 35px;
+.card3{
+    margin-left: 32px;
 }
-
-.GF {
-    background-color: aliceblue;
-    margin-left: 10%;
-    margin-top: 30px;
-    height: 120px;
-    width: 25%;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    border-radius: 30px;
-    text-align: center;
-    padding-top: 35px;
+.div{
+    margin-left: 120px;
 }
-
-
-.Notif {
-    background-color: aliceblue;
-    margin-left: 10%;
-    margin-top: 30px;
-    height: 100px;
-    width: 25%;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    border-radius: 30px;
-    text-align: center;
-    padding-top: 35px;
+.card-container{
+    display: flex;
 }
-
+/* From Uiverse.io by SteveBloX */ 
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  

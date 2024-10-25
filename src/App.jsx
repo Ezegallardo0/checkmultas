@@ -2,6 +2,55 @@ import Navbar from './components/Navbar';
 import './styles/app.css';
 
 function App() {
+  const reviews = [
+    {
+      text: "Excelente servicio!! Muy eficiente, atención personalizada y precio razonable, lo recomiendo 100%",
+      stars: 5,
+      author: "Catalina T."
+    },
+    {
+      text: "Un espectáculo, la solución a mis problemas",
+      stars: 5,
+      author: "Nicolas A."
+    },
+    {
+      text: "De diez el servicio, me resolvieron una infracción",
+      stars: 5,
+      author: "Luis V."
+    },
+    {
+      text: "La verdad que el sistema funciona bastante bien. Tuve dos multas por un total de $241258 (Pago voluntario de $120629)...",
+      stars: 5,
+      author: "Fede R."
+    },
+    {
+      text: "Funciona re bien, me llegó el mensaje de una multa en un lugar que nunca transité y era que un auto tenía la patente muy parecida a la mía...",
+      stars: 5,
+      author: "Pablo M."
+    }
+  ];
+
+  const renderStars = (stars) => {
+    return Array(stars)
+      .fill(0)
+      .map((_, index) => (
+        <svg
+          key={index}
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-star-icon fill-amber-100 stroke-amber-500 size-6 md:size-8"
+        >
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+      ));
+  };
   return (
     <>
       <Navbar />
@@ -20,18 +69,41 @@ function App() {
         <Card title="Revisá tu reporte" text="Fijate si tenés multas impagas y cuánto podés ahorrar." className="res" />
         <Card title="Creá tu cuenta" text="Configurá el monitoreo gratis y accedé a descuentos exclusivos." className="crea" />
       </section>
-
-      <section className="xq">
-        <h1 className="pq">¿Por qué nos eligen?</h1>
-        <button className="C2r">Crear cuenta gratis</button>
-      </section>
-
-      <section className="Cards2">
-        <Card title="Monitoreo gratis 24/7" text="Mantenete al tanto de nuevas multas." className="Moni" />
-        <Card title="Ahorrá hasta un 50%" text="Accedé a descuentos exclusivos con SinFotoMultas" className="Ahorra" />
-        <Card title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." className="GF" />
-        <Card title="Notificaciones al toque" text="Nunca más te pierdas una fecha de pago ni vencimiento." className="Notif" />
-      </section>
+      <article className='card-container'>
+        <section className="xq">
+          <h1 className="pq">¿Por qué nos eligen?</h1>
+          <button className="C2r">Crear cuenta gratis</button>
+        </section>
+        <section className="Cards2">
+          <div className='div'>
+            <Card title="Monitoreo gratis 24/7" text="Mantenete al tanto de nuevas multas." className="card2" />
+            <Card title="Ahorrá hasta un 50%" text="Accedé a descuentos exclusivos con SinFotoMultas" className="card2" />
+          </div>
+          <div className='div'>
+            <Card title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." className="card2 card3" />
+            <Card title="Notificaciones al toque" text="Nunca más te pierdas una fecha de pago ni vencimiento." className="card2 card3" />
+          </div>
+        </section>
+      </article>
+      <div className="space-y-4 md:space-y-8 mx-auto border p-4 md:p-8 rounded-lg md:rounded-xl bg-white shadow-sm">
+        <div className="flex items-center justify-between border-b pb-4 md:pb-8 ">
+          <h1 className="text-lg md:text-3xl font-bold tracking-tight">Más de 500 personas confían en Check multas</h1>
+        </div>
+        <div className="row gx-5">
+            {reviews.map((review, index) => (
+              <div key={index} id={`review-${index}`} className="card">
+                <div className="text-sm md:text-base line-clamp-3">{review.text}</div>
+                <div className="grow"></div>
+                <div className="flex">
+                  {renderStars(review.stars)}
+                </div>
+                <div className="space-x-2 text-sm md:text-base">
+                  <b className="font-semibold">{review.author}</b>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div >
     </>
   );
 }
