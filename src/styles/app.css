@@ -230,4 +230,51 @@ h2 {
     transform: scale(1.05);
   }
   
+  .bg-container {
+    background-color: #333; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
   
+  .reviews-container {
+    background-color: #333; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .reviews-header h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 40px); /* Tres tarjetas por fila */
+    box-sizing: border-box;
+  }
+  
+  .review-text {
+    margin-bottom: 10px;
+  }
+  
+  .review-stars {
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-weight: bold;
+  }

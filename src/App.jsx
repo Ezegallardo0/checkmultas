@@ -51,6 +51,7 @@ function App() {
         </svg>
       ));
   };
+
   return (
     <>
       <Navbar />
@@ -69,7 +70,8 @@ function App() {
         <Card title="Revisá tu reporte" text="Fijate si tenés multas impagas y cuánto podés ahorrar." className="res" />
         <Card title="Creá tu cuenta" text="Configurá el monitoreo gratis y accedé a descuentos exclusivos." className="crea" />
       </section>
-      <article className='card-container'>
+
+      <article className='card-container bg-container'>
         <section className="xq">
           <h1 className="pq">¿Por qué nos eligen?</h1>
           <button className="C2r">Crear cuenta gratis</button>
@@ -85,28 +87,26 @@ function App() {
           </div>
         </section>
       </article>
-      <div className="space-y-4 md:space-y-8 mx-auto border p-4 md:p-8 rounded-lg md:rounded-xl bg-white shadow-sm">
-        <div className="flex items-center justify-between border-b pb-4 md:pb-8 ">
-          <h1 className="text-lg md:text-3xl font-bold tracking-tight">Más de 500 personas confían en Check multas</h1>
+
+      <div className="reviews-container">
+        <div className="reviews-header">
+          <h1>Más de 500 personas confían en Check multas</h1>
         </div>
-        <div className="row gx-5">
-            {reviews.map((review, index) => (
-              <div key={index} id={`review-${index}`} className="card">
-                <div className="text-sm md:text-base line-clamp-3">{review.text}</div>
-                <div className="grow"></div>
-                <div className="flex">
-                  {renderStars(review.stars)}
-                </div>
-                <div className="space-x-2 text-sm md:text-base">
-                  <b className="font-semibold">{review.author}</b>
-                </div>
-              </div>
-            ))}
+        <div className="reviews-grid">
+          {reviews.map((review, index) => (
+            <div key={index} id={`review-${index}`} className="card">
+              <div className="review-text">{review.text}</div>
+              <div className="review-stars">{renderStars(review.stars)}</div>
+              <div className="review-author"><b>{review.author}</b></div>
+            </div>
+          ))}
         </div>
-      </div >
+      </div>
     </>
   );
 }
+
+import PropTypes from 'prop-types';
 
 function Card({ title, text, className }) {
   return (
@@ -116,5 +116,11 @@ function Card({ title, text, className }) {
     </div>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  className: PropTypes.string
+};
 
 export default App;
