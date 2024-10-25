@@ -11,8 +11,11 @@ function App() {
         <h2>Controlá tus multas, ahorrá plata</h2>
         <p>Unite a miles de conductores que ahorran plata y evitan sorpresas.</p>
         <div className='patente'>
-          <button className='Dni'>Ingresa tu Dni o Patente</button>
+          <input className='Dni' placeholder="Ingresa tu Dni o Patente" />
           <button className='MA'>Consulta tus multas ahora</button>
+        </div>
+        <div className='consultas'>
+          <button className='psr'>+50,000 consultas realizadas este último mes</button>
         </div>
       </div>
     </>

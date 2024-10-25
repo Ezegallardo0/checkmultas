@@ -7,13 +7,14 @@
     text-align: center;
     font-size: 16px;
     padding: 10px;
-    width: 200px;
+    width: 210px;
     height: 50px;
     font-size: 15px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
     color: rgb(182, 181, 181);
     background-color: white;
+    margin-top: 25px;
 }
 
 .MA {
@@ -45,14 +46,35 @@ h2 {
     font-weight: 900;
     font-style: normal;
 }
-
+.psr{
+    border-radius: 10vh;
+    width: 19%;
+    display: inline;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(255, 238, 0);
+    color:black;
+    margin-left: 40%;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
 p {
     text-align: center;
     font-size: 30px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
+.consultas{
 
+}
+.consultas button{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
 .patente {
     display: flex;
     justify-content: center;
@@ -66,6 +88,6 @@ p {
 
 .homebg {
     background-color: rgb(132, 197, 232);
-    height: 55vh;
+    height: 60vh;
     font-family: "Reddit Sans", sans-serif;
 }
