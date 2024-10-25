@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootswatch/dist/lux/bootstrap.min.css';
+import 'boxicons'
 import './index.css'
 import App from './App.jsx'
 

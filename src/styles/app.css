@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-h4{
+h4 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 20px;
     color: black;
 }
+
 .Dni {
     display: inline;
     border-radius: 5px;
@@ -42,7 +43,6 @@ h4{
 
 h2 {
     color: aliceblue;
-    text-align: center;
     margin-left: 50px;
     padding-right: 50px;
     font-size: 130px;
@@ -52,7 +52,8 @@ h2 {
     font-weight: 900;
     font-style: normal;
 }
-.psr{
+
+.psr {
     border-radius: 10vh;
     width: 19%;
     display: inline;
@@ -61,23 +62,26 @@ h2 {
     font-size: 16px;
     padding: 10px;
     background-color: rgb(255, 238, 0);
-    color:black;
+    color: black;
     margin-left: 40%;
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
+
 .uni {
     text-align: center;
     font-size: 30px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
-.consultas button{
+
+.consultas button {
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
+
 .patente {
     display: flex;
     justify-content: center;
@@ -94,8 +98,9 @@ h2 {
     height: 60vh;
     font-family: "Reddit Sans", sans-serif;
 }
-.cheq{
-    background-color:aliceblue;
+
+.cheq {
+    background-color: aliceblue;
     margin-left: 10%;
     margin-top: 30px;
     height: 170px;
@@ -104,29 +109,33 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
 }
-.cheqp{
+
+.cheqp {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     padding-top: 1px;
 }
-.cheqh{
-    color: rgb(0, 0, 0);
-    padding-top: 68px;
-    margin-left: 20px;
-}
-.resh{
-    color: rgb(0, 0, 0);
-    padding-top: 68px;
-    margin-left: 20px;
-}
-.creah{
+
+.cheqh {
     color: rgb(0, 0, 0);
     padding-top: 68px;
     margin-left: 20px;
 }
 
-.res{
-    background-color:aliceblue;
+.resh {
+    color: rgb(0, 0, 0);
+    padding-top: 68px;
+    margin-left: 20px;
+}
+
+.creah {
+    color: rgb(0, 0, 0);
+    padding-top: 68px;
+    margin-left: 20px;
+}
+
+.res {
+    background-color: aliceblue;
     margin-top: 30px;
     height: 170px;
     width: 25%;
@@ -134,13 +143,15 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
 }
-.resp{
+
+.resp {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     padding-top: 1px;
 }
-.crea{
-    background-color:aliceblue;
+
+.crea {
+    background-color: aliceblue;
     margin-top: 30px;
     margin-right: 90px;
     height: 170px;
@@ -149,17 +160,20 @@ h2 {
     font-weight: 900;
     border-radius: 30px;
 }
-.config{
+
+.config {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     padding-top: 1px;
 }
-.Cards{
+
+.Cards {
     display: flex;
     justify-content: space-between;
 }
-.xq{
-    background-color:rgb(174, 172, 172);
+
+.xq {
+    background-color: rgb(174, 172, 172);
     margin-top: 30px;
     margin-left: 10%;
     border-radius: 10px;
@@ -168,10 +182,12 @@ h2 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
-.pq{
+
+.pq {
     padding-top: 20px;
 }
-.C2r{
+
+.C2r {
     margin-top: 60px;
     margin-left: 35px;
     width: 85%;
@@ -185,8 +201,9 @@ h2 {
     font-weight: 800;
     padding: 10px;
 }
-.Moni{
-    background-color:aliceblue;
+
+.Moni {
+    background-color: aliceblue;
     margin-left: 10%;
     margin-top: 30px;
     height: 100px;
@@ -196,11 +213,13 @@ h2 {
     border-radius: 30px;
     text-align: center;
 }
-.monih{
+
+.monih {
     padding-top: 35px;
 }
-.Ahorra{
-    background-color:aliceblue;
+
+.Ahorra {
+    background-color: aliceblue;
     margin-left: 10%;
     margin-top: 30px;
     height: 100px;
@@ -210,11 +229,13 @@ h2 {
     border-radius: 30px;
     text-align: center;
 }
-.ahr{
+
+.ahr {
     padding-top: 35px;
 }
-.GF{
-    background-color:aliceblue;
+
+.GF {
+    background-color: aliceblue;
     margin-left: 10%;
     margin-top: 30px;
     height: 120px;
@@ -224,11 +245,13 @@ h2 {
     border-radius: 30px;
     text-align: center;
 }
-.gfh{
+
+.gfh {
     padding-top: 35px;
 }
-.Notif{
-    background-color:aliceblue;
+
+.Notif {
+    background-color: aliceblue;
     margin-left: 10%;
     margin-top: 30px;
     height: 100px;
@@ -238,7 +261,7 @@ h2 {
     border-radius: 30px;
     text-align: center;
 }
-.notifh{
+
+.notifh {
     padding-top: 35px;
 }
-
