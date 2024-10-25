@@ -13,8 +13,16 @@ h1 {
     font-size: 50px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
+    color: white;
 }
-
+.test{
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+    padding-top: 40px;
+    margin-right: 53%;
+}
 .In {
     display: inline-block;
     background-color: #E8DD89;
