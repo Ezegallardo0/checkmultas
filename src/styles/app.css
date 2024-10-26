@@ -291,9 +291,9 @@ h2 {
 
 .pregu {
     background-color: #444;
-    width: 38%;
-    height: 65vh;
-    margin-left: 5vh;
+    width: 30%;
+    height: 84vh;
+    margin-left: 24vh;
     border-radius: 3vh;
 }
 
@@ -303,12 +303,13 @@ h2 {
 
 /*H1 de preguntas frecuentes*/
 .preguntas {
-    margin-left: 42%;
-    margin-top: -693px;
+    margin-left: 45%;
+    margin-top: -84vh;
     background-color: #9b9a9a;
     border-radius: 1vh;
     margin-right: 2vh;
-    height: 65vh;
+    height: 84vh;
+    width: 35%;
 
 }
 
