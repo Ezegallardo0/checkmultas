@@ -29,7 +29,6 @@ function App() {
       author: "Pablo M."
     }
   ];
-
   const renderStars = (stars) => {
     return Array(stars)
       .fill(0)
@@ -102,6 +101,21 @@ function App() {
           ))}
         </div>
       </div>
+      <article className='Questions'>
+        <section className='pregu'>
+          <h2 className='PreFre'>Preguntas frecuentes</h2>
+        </section>
+        <section className='preguntas'>
+            <Card title='¿Es legal CheckMultas?' text='Si, nuestra empresa es 100% legal y transparente, no hay letra chica en nuestro servicio.' className=" preguntas1" />
+            <Card title='¿Cómo funciona el monitoreo automático gratuito de CheckMultas?' text='Multabot monitorea los registros de infracciones de Capital Federal y Provincia de Buenos Aires. No manipulamos información por nuestra cuenta.' className="preguntas1" />
+            <Card title='¿Qué tipos de notificaciones recibiré y cómo las recibiré?' text='Vamos a enviarte notificaciones de nuevas infracciones y también recordatorios de vencimientos próximos.' className="preguntas1" />
+            <Card title='¿Puedo monitorear más de un vehículo?' text='Podés tener vehículos o DNI ilimitados por cuenta.' className="preguntas1" />
+            <Card title='¿Puedo monitorear mi documento DNI?' text='Sí! Monitoreo de DNI también está disponible.' className="preguntas1" />
+            <Card title='¿Multabot ofrece descuentos en multas?' text='A través de nuestra alianza con SinFotoMultas los usuarios de Multabot pueden acceder a importantes descuentos en sus infracciones.' className="preguntas1" />
+            <Card title='¿Puedo monitorear múltiples vehículos y cómo lo hago?' text='Si! Podes monitorear hasta 5 vehículos de manera gratuita. Para crearlos solo debes acceder a "Mis bots" y hacer clic en "Nuevo bot"' className="preguntas1" />
+            <Card title='¿Multabot ofrece cobertura en qué áreas y tiene planes de expansión?' text='Por ahora ofrecemos servicio para Capital Federal y Provincia de Buenos Aires. CheckMultas será nacional en poco tiempo.' className="preguntas1" />
+        </section>
+      </article>
     </>
   );
 }

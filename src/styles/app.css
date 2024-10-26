@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 h4 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 20px;
-    color: black;
 }
 
 .Dni {
@@ -150,7 +150,8 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-.Cards2{
+
+.Cards2 {
     display: flex;
 
 }
@@ -185,7 +186,7 @@ h2 {
     padding: 10px;
 }
 
-.card2{
+.card2 {
     background-color: aliceblue;
     margin-top: 30px;
     height: 130px;
@@ -196,16 +197,20 @@ h2 {
     text-align: center;
     padding-top: 35px;
 }
-.card3{
+
+.card3 {
     margin-left: 32px;
 }
-.div{
+
+.div {
     margin-left: 120px;
 }
-.card-container{
+
+.card-container {
     display: flex;
 }
-/* From Uiverse.io by SteveBloX */ 
+
+/* From Uiverse.io by SteveBloX */
 .card {
     box-sizing: border-box;
     width: 190px;
@@ -224,59 +229,102 @@ h2 {
     user-select: none;
     font-weight: bolder;
     color: black;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     border: 1px solid black;
     transform: scale(1.05);
-  }
-  
-  .bg-container {
-    background-color: #333; /* Fondo oscuro */
+}
+
+.bg-container {
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-  }
-  
-  .reviews-container {
-    background-color: #333; /* Fondo oscuro */
+    margin-top: 2vh;
+}
+
+.reviews-container {
+    background-color: #333;
+    /* Fondo oscuro */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     margin: 20px auto;
     max-width: 1200px;
-  }
-  
-  .reviews-header h1 {
+}
+
+.reviews-header h1 {
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  .reviews-grid {
+}
+
+.reviews-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .card {
+}
+
+.card {
     background-color: #444;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: calc(33.333% - 40px); /* Tres tarjetas por fila */
+    width: calc(33.333% - 40px);
+    /* Tres tarjetas por fila */
     box-sizing: border-box;
-  }
-  
-  .review-text {
+}
+
+.review-text {
     margin-bottom: 10px;
-  }
-  
-  .review-stars {
+}
+
+.review-stars {
     margin-bottom: 10px;
     color: #d9e31b;
-  }
-  
-  .review-author {
+}
+
+.review-author {
     font-weight: bold;
-  }
+}
+
+.pregu {
+    background-color: #444;
+    width: 38%;
+    height: 65vh;
+    margin-left: 5vh;
+    border-radius: 3vh;
+}
+
+.PreFre {
+    font-size: 2rem;
+}
+
+/*H1 de preguntas frecuentes*/
+.preguntas {
+    margin-left: 42%;
+    margin-top: -693px;
+    background-color: #9b9a9a;
+    border-radius: 1vh;
+    margin-right: 2vh;
+    height: 65vh;
+
+}
+
+/*es el contenedor a la clase de las preguntas*/
+.preguntas1 {
+    font-size: 16px;
+    padding-right: 1vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+
+}
+
+/*son las preguntas*/
+.Questions {
+    margin-top: 3vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
