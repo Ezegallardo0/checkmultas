@@ -1,5 +1,10 @@
+import React from 'react';
 import Navbar from './components/Navbar';
+import login from './pages/login';
+import register from './pages/register';
 import './styles/app.css';
+import { BrowserRouter , Routes, Route, } from "react-router-dom";
+
 
 function App() {
   const reviews = [
@@ -53,7 +58,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
+    <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/login" element={<login.jsx />} />
+      <Route path="/register" element={<register.jsx />} />
+    </Routes>
+    </BrowserRouter>
       <section className="homebg">
         <h2>Controlá tus multas, ahorrá plata</h2>
         <p className="uni">Unite a miles de conductores que ahorran plata y evitan sorpresas.</p>
@@ -73,7 +84,7 @@ function App() {
       <article className='card-container bg-container'>
         <section className="xq">
           <h1 className="pq">¿Por qué nos eligen?</h1>
-          <button className="C2r">Crear cuenta gratis</button>
+          <button className="C2r" onClick={() => window.location.href = '/register'}>Crear cuenta gratis</button>
         </section>
         <section className="Cards2">
           <div className='div'>
@@ -107,7 +118,7 @@ function App() {
         </section>
         <section className='preguntas'>
             <Card title='¿Es legal CheckMultas?' text='Si, nuestra empresa es 100% legal y transparente, no hay letra chica en nuestro servicio.' className=" preguntas1" />
-            <Card title='¿Cómo funciona el monitoreo automático gratuito de CheckMultas?' text='Multabot monitorea los registros de infracciones de Capital Federal y Provincia de Buenos Aires. No manipulamos información por nuestra cuenta.' className="preguntas1" />
+            <Card title='¿Cómo funciona el monitoreo automático gratuito de CheckMultas?' text='Multabot monitorea los registros de infracciones de Capital Federal y Provincia de Buenos Aires. No manipulamos información por nuestra cuenta.' className="preguntas1"  />
             <Card title='¿Qué tipos de notificaciones recibiré y cómo las recibiré?' text='Vamos a enviarte notificaciones de nuevas infracciones y también recordatorios de vencimientos próximos.' className="preguntas1" />
             <Card title='¿Puedo monitorear más de un vehículo?' text='Podés tener vehículos o DNI ilimitados por cuenta.' className="preguntas1" />
             <Card title='¿Puedo monitorear mi documento DNI?' text='Sí! Monitoreo de DNI también está disponible.' className="preguntas1" />

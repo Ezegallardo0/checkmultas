@@ -8,8 +8,8 @@ const Navbar = () => {
                 <h1>Check-Multas</h1>
                 <a className='test' href="#">Testimonios</a>
                 <div className='buton'>
-                    <button className='In'>Iniciar sesion</button>
-                    <button className='Cr'>Crear cuenta</button>
+                    <button className='In' onClick={() => window.location.href = '/login'}>Iniciar sesión</button>
+                    <button className='Cr' onClick={() => window.location.href = '/register'}>Crear cuenta</button>
                 </div>
             </div>
         </>
