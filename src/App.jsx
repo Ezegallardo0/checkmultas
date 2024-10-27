@@ -61,8 +61,8 @@ function App() {
     <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/login" element={<login.jsx />} />
-      <Route path="/register" element={<register.jsx />} />
+      <Route path="/login" element={<login />} />
+      <Route path="/register" element={<register />} />
     </Routes>
     </BrowserRouter>
       <section className="homebg">
