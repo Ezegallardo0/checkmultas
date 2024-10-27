@@ -3,7 +3,7 @@ import '../styles/register.css';
 import Navbar from '../components/Navbar';
 
 
-const register = () => {
+const Register = () => {
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
@@ -35,7 +35,7 @@ const register = () => {
             placeholder=""
             type="text"
             className="input"
-            value={Nombre}
+            value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
           />
           <span>Nombre</span>
@@ -47,7 +47,7 @@ const register = () => {
             placeholder=""
             type="text"
             className="input"
-            value={Apellido}
+            value={lastname}
             onChange={(e) => setLastname(e.target.value)}
           />
           <span>Apellido</span>
@@ -98,4 +98,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

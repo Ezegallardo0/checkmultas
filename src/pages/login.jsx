@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
 
-const login = () => {
+const Login = () => {
   const [email, setEmail] = useState ('')
   const [contraseña, setContraseña ] = useState ('')
 
@@ -39,4 +39,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login

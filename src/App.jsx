@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import login from './pages/login';
-import register from './pages/register';
+import Login from './pages/login';
+import Register from './pages/register';
 import './styles/app.css';
-import { BrowserRouter , Routes, Route, } from "react-router-dom";
+
 
 
 function App() {
@@ -58,13 +58,6 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/login" element={<login />} />
-      <Route path="/register" element={<register />} />
-    </Routes>
-    </BrowserRouter>
       <section className="homebg">
         <h2>Controlá tus multas, ahorrá plata</h2>
         <p className="uni">Unite a miles de conductores que ahorran plata y evitan sorpresas.</p>
