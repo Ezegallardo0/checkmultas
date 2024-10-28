@@ -1,4 +1,5 @@
 import './styles/app.css';
+import Navbar from './components/Navbar';
 
 
 
