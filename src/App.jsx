@@ -1,7 +1,3 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Login from './pages/login';
-import Register from './pages/register';
 import './styles/app.css';
 
 
