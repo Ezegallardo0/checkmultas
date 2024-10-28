@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 h4 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
@@ -79,7 +78,6 @@ h2 {
     font-weight: 900;
 }
 
-
 .patente {
     display: flex;
     justify-content: center;
@@ -92,10 +90,21 @@ h2 {
 }
 
 .homebg {
-    background-color: rgb(132, 197, 232);
-    height: 60vh;
-    font-family: "Reddit Sans", sans-serif;
+    background: linear-gradient(to bottom right, #1D4ED8, #0EA5E9, #3B82F6); /* bg-gradient-to-br from-blue-700 via-sky-500 to-blue-500 */
+    padding-top: 3rem; /* py-12 */
+    padding-bottom: 3rem; /* py-12 */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
     text-align: center;
+    font-family: "Reddit Sans", sans-serif;
+    height: auto; /* Ajustar la altura según sea necesario */
+}
+
+@media (min-width: 768px) {
+    .homebg {
+        padding-top: 6rem; /* md:py-24 */
+        padding-bottom: 6rem; /* md:py-24 */
+    }
 }
 
 .cheq {
@@ -153,7 +162,6 @@ h2 {
 
 .Cards2 {
     display: flex;
-
 }
 
 .xq {
@@ -310,7 +318,6 @@ h2 {
     margin-right: 2vh;
     height: 84vh;
     width: 35%;
-
 }
 
 /*es el contenedor a la clase de las preguntas*/
@@ -319,7 +326,6 @@ h2 {
     padding-right: 1vh;
     padding-top: 1vh;
     padding-left: 1vh;
-
 }
 
 /*son las preguntas*/
@@ -328,4 +334,45 @@ h2 {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
+}
+
+/* Estilos para DropdownCard */
+.dropdown-card {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    width: 87%;
+    margin-left: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.dropdown-title {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.dropdown-card.open .dropdown-content {
+    max-height: 500px; /* Ajusta este valor según sea necesario */
+    opacity: 1;
+}
+
+.dropdown-text {
+    padding: 1rem;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
 }
