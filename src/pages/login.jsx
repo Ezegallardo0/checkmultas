@@ -19,22 +19,40 @@ const Login = () => {
   return (
     <>
     <Navbar />
-    <form className='form' onSubmit={handleSubmit}>
-      <p className='title'>Iniciar sesión</p>
-      <div className='flex'>
+    <div className='container'>
+    <form className='form1' onSubmit={handleSubmit}>
+      <p className='title1'>Iniciar sesión</p>
+      <div>
         <label>
-          <input required placeholder="" type='email' className='input' value={email} onChange={(e) => setEmail(e.target.value)} />
-          <span>Email</span>
-        </label>
-        <label>
-          <input required placeholder="" type='password' className='input' value={contraseña} onChange={(e) => setContraseña(e.target.value)} />
-        </label>
-        <button type='submit' className='submit'>Iniciar sesión</button>
-        <p className='signing'>
-        ¿No tenes Cuenta todavia? <a onClick={() => window.location.href = '/register'}>Crear Cuenta</a>
+        <input
+          required
+          placeholder=""
+          type="email"
+          className="input1"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <span>Email</span>
+      </label>
+
+      <label>
+        <input
+          required
+          placeholder=""
+          type="password"
+          className="input2"
+          value={contraseña}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <span>Contraseña</span>
+      </label>
+        <button type='submit1' className='submit1'>Iniciar sesión</button>
+        <p className='signing1'>
+        ¿No tenes Cuenta todavia? <a className='reg' onClick={() => window.location.href = '/register'}>Crear Cuenta</a>
         </p>
       </div>
     </form>
+    </div>
     </>
   )
 }

@@ -91,7 +91,7 @@ const Register = () => {
       </label>
       <button type="submit" className="submit">Crear cuenta</button>
       <p className="signin">
-      ¿Ya tenes una cuenta? <a onClick={() => window.location.href = '/login'}>Iniciar sesión</a>
+      ¿Ya tenes una cuenta? <a className='log' onClick={() => window.location.href = '/login'}>Iniciar sesión</a>
       </p>
     </form>
     </>

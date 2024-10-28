@@ -4,10 +4,12 @@
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #fff;
+    background-color: #d2d2d2;
     padding: 20px;
     border-radius: 20px;
     position: relative;
+    margin-left: 40%;
+    margin-top: 30px;
   }
   
   .title {
@@ -118,6 +120,10 @@
     background-color: rgb(56, 90, 194);
   }
   
+  .log{
+    cursor: pointer;
+    color: royalblue
+  }
   @keyframes pulse {
     from {
       transform: scale(0.9);
