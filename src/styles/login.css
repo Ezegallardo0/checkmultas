@@ -1,21 +1,36 @@
-.container{
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  align-items: center;
+  height: 100vh;
 }
-.form1 {
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 60vh;
-  height: 45vh;
+  max-width: 350px;
   background-color: #d2d2d2;
   padding: 20px;
   border-radius: 20px;
   position: relative;
+  margin-left: 40%;
+  margin-top: 30px;
 }
 
-.title1 {
+.title {
   font-size: 28px;
   color: royalblue;
   font-weight: 600;
@@ -26,7 +41,7 @@
   padding-left: 30px;
 }
 
-.title1::before,.title::after {
+.title::before, .title::after {
   position: absolute;
   content: "";
   height: 16px;
@@ -36,49 +51,54 @@
   background-color: royalblue;
 }
 
-.title1::before {
+.title::before {
   width: 18px;
   height: 18px;
   background-color: royalblue;
 }
 
-.title1::after {
+.title::after {
   width: 18px;
   height: 18px;
   animation: pulse 1s linear infinite;
 }
 
- .signin1 {
+.message, .signin {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
 }
 
-.signin1 {
+.signin {
   text-align: center;
 }
 
-.signin1 a {
+.signin a {
   color: royalblue;
 }
 
-.signin1 a:hover {
+.signin a:hover {
   text-decoration: underline royalblue;
 }
 
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
 
-.form1 label {
+.form label {
   position: relative;
 }
 
-.form1 label .input1 {
-  width: 260%;
+.form label .input {
+  width: 100%;
   padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
 
-.form1 label .input1 + span {
+.form label .input + span {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -88,22 +108,22 @@
   transition: 0.3s ease;
 }
 
-.form1 label .input1:placeholder-shown + span {
+.form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
 
-.form1 label .input1:focus + span,.form1 label .input1:valid + span {
+.form label .input:focus + span, .form label .input:valid + span {
   top: 30px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form1 label .input1:valid + span {
+.form label .input:valid + span {
   color: green;
 }
 
-.submit1 {
+.submit {
   border: none;
   outline: none;
   background-color: royalblue;
@@ -114,13 +134,13 @@
   transform: .3s ease;
 }
 
-.submit1:hover {
+.submit:hover {
   background-color: rgb(56, 90, 194);
 }
-.reg{
-  cursor: pointer;
-  color: blue;
 
+.log {
+  cursor: pointer;
+  color: royalblue;
 }
 
 @keyframes pulse {
@@ -132,5 +152,27 @@
   to {
     transform: scale(1.8);
     opacity: 0;
+  }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .form {
+    padding: 1.5rem;
+    margin-left: 0;
+    margin-top: 10vh;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .form label .input, .submit {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .signin {
+    font-size: 0.75rem;
   }
 }
