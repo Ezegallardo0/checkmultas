@@ -1,32 +1,14 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+.container{
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
+.formLogin {
   gap: 10px;
-  max-width: 350px;
+  max-width: 380px;
   background-color: #d2d2d2;
   padding: 20px;
   border-radius: 20px;
-  position: relative;
-  margin-left: 40%;
   margin-top: 30px;
 }
 
@@ -70,6 +52,7 @@ body {
 
 .signin {
   text-align: center;
+  padding-top: 6px;
 }
 
 .signin a {
@@ -80,25 +63,19 @@ body {
   text-decoration: underline royalblue;
 }
 
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
-
-.form label {
+.formLogin label {
   position: relative;
 }
 
-.form label .input {
-  width: 100%;
+.formLogin label .input {
+  width: 150%;
   padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
 
-.form label .input + span {
+.formLogin label .input + span {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -108,18 +85,18 @@ body {
   transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.formLogin label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
 
-.form label .input:focus + span, .form label .input:valid + span {
+.formLogin label .input:focus + span, .formLogin label .input:valid + span {
   top: 30px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input:valid + span {
+.formLogin label .input:valid + span {
   color: green;
 }
 
@@ -127,11 +104,12 @@ body {
   border: none;
   outline: none;
   background-color: royalblue;
-  padding: 10px;
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
   transform: .3s ease;
+  margin-top: 10px;
+  margin-left: 190px;
 }
 
 .submit:hover {
@@ -141,6 +119,8 @@ body {
 .log {
   cursor: pointer;
   color: royalblue;
+  font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 
 @keyframes pulse {

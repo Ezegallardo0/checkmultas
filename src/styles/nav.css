@@ -14,6 +14,7 @@ h1 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     color: white;
+    cursor: pointer;
 }
 .test{
     font-size: 23px;

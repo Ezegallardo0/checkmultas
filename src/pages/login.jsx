@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import '../styles/login.css';
 import Navbar from '../components/Navbar';
 
@@ -19,7 +19,7 @@ const Login = () => {
     <>
       <Navbar />
       <div className='container'>
-        <form className='form' onSubmit={handleSubmit}>
+        <form className='formLogin' onSubmit={handleSubmit}>
           <p className='title'>Iniciar sesión</p>
           <div>
             <label>

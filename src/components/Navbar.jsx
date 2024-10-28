@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <>
             <div className='Nav'>
-                <h1>Check-Multas</h1>
+                <h1 onClick={() => window.location.href = '/'}>Check-Multas</h1>
                 <a className='test' href="#">Testimonios</a>
                 <div className='buton'>
                     <button className='In' onClick={() => window.location.href = '/login'}>Iniciar sesión</button>

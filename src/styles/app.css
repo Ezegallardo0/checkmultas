@@ -291,20 +291,20 @@ h2 {
 
 .pregu {
     background-color: #444;
-    width: 30%;
-    height: 84vh;
-    margin-left: 24vh;
+    width: 22.7%;
+    height: 10vh;
+    margin-left: 39.5vh;
     border-radius: 3vh;
 }
 
 .PreFre {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 /*H1 de preguntas frecuentes*/
 .preguntas {
-    margin-left: 45%;
-    margin-top: -84vh;
+    margin-left: 20px;
     background-color: #9b9a9a;
     border-radius: 1vh;
     margin-right: 2vh;
@@ -324,7 +324,7 @@ h2 {
 
 /*son las preguntas*/
 .Questions {
-    margin-top: 3vh;
+    display: flex;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
