@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .Nav {
-    background-color: #a5d7e8;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Desenfoque de fondo para Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
     height: 100px;
     display: flex;
     justify-content: space-between;
+    position: sticky; /* Hacer que el navbar sea sticky */
+    top: 0; /* Posición en la parte superior */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
 }
 
 h1 {
@@ -13,7 +20,7 @@ h1 {
     font-size: 50px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 .test{
@@ -27,7 +34,7 @@ h1 {
 }
 .In {
     display: inline-block;
-    background-color: #E8DD89;
+    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Gradiente de amarillo */
     color: black;
     border-radius: 5px;
     border: none;
@@ -37,6 +44,13 @@ h1 {
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-weight: 800;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+.In:hover {
+    background: linear-gradient(135deg, #FFC107, #FFB300); /* Gradiente de amarillo más intenso al pasar el ratón */
 }
 
 .Cr {
@@ -51,6 +65,10 @@ h1 {
     width: 130px;
     font-family: "Inter", sans-serif;
     font-weight: 800;
+}
+
+.Cr:hover {
+    background: linear-gradient(135deg, #1D4ED8, #1E40AF); /* Gradiente de azul más oscuro al pasar el ratón */
 }
 .buton{
 

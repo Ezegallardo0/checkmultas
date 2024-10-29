@@ -100,12 +100,7 @@ h2 {
     height: auto; /* Ajustar la altura según sea necesario */
 }
 
-@media (min-width: 768px) {
-    .homebg {
-        padding-top: 6rem; /* md:py-24 */
-        padding-bottom: 6rem; /* md:py-24 */
-    }
-}
+
 
 .cheq {
     background-color: aliceblue;
@@ -375,4 +370,54 @@ h2 {
     background-color: #fff;
     color: #333;
     font-size: 1rem;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .homebg {
+        padding-top: 6rem; /* md:py-24 */
+        padding-bottom: 6rem; /* md:py-24 */
+    }
+    .Nav h1 {
+        padding-top: 17px;
+        font-size: 30px;
+        min-width: 140px;
+    }
+    .Nav {
+        height: 65px !important;
+    }
+    a.test {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+    .buton {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .buton button {
+        margin-right: 15px;
+        margin-top: 15px !important;
+    }
+    .In, .Cr {
+        margin-right: 15px;
+        width: 130px;
+        height: 40px; /* Ajustar la altura según sea necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    .In p, .Cr p {
+  
+        margin: 0; /* Eliminar el margen para centrar el texto */
+        font-size: 14px; /* Ajustar el tamaño de fuente según sea necesario */
+    }
+    h2 {
+        font-size: 91px !important;
+    }
+    .patente button {
+        margin-top: 25px;
+        font-size: 15px;
+    }
 }

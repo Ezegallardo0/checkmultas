@@ -6,10 +6,10 @@ const Navbar = () => {
         <>
             <div className='Nav'>
                 <h1 onClick={() => window.location.href = '/'}>Check-Multas</h1>
-                <a className='test' href="#">Testimonios</a>
+                
                 <div className='buton'>
-                    <button className='In' onClick={() => window.location.href = '/login'}>Iniciar sesión</button>
-                    <button className='Cr' onClick={() => window.location.href = '/register'}>Crear cuenta</button>
+                    <button className='In' onClick={() => window.location.href = '/login'}> <p>Iniciar sesión</p></button>
+                    <button className='Cr' onClick={() => window.location.href = '/register'}><p>Crear cuenta</p></button>
                 </div>
             </div>
         </>
