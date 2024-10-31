@@ -103,49 +103,73 @@ h2 {
     font-family: "Reddit Sans", sans-serif;
     height: auto; /* Ajustar la altura según sea necesario */
 }
-
-
-
-.cheq {
-    background-color: aliceblue;
-    margin-top: 30px;
-    height: 170px;
-    width: 25%;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    border-radius: 30px;
-    color: rgb(0, 0, 0);
-    padding-top: 68px;
-    margin-left: 10%;
-    text-align: center;
+.XD{
+    padding-top: 10px;
+}
+.card4{
+    padding-top: 30px;
 }
 
-.res {
-    background-color: aliceblue;
+.cheq {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
     margin-top: 30px;
-    height: 170px;
+    width: 25%;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    border-radius: 30px;
+    border: 3px solid rgba(135, 135, 135, 0.067);
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 10px;
+}
+.Icon1{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin-left: 45%;
+    color: white;
+}
+.Icon{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin-left: 45%;
+    color: white;
+}
+.res {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin-top: 30px;
     width: 25%;
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
     color: rgb(0, 0, 0);
-    padding-top: 68px;
     margin-left: 20px;
     text-align: center;
+    border: 3px solid rgba(135, 135, 135, 0.067);
+    padding-top: 10px;
 }
 
 .crea {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     margin-top: 30px;
     margin-right: 90px;
-    height: 170px;
+    height: 200px;
     width: 25%;
     font-family: "Inter", sans-serif;
     font-weight: 900;
     border-radius: 30px;
     color: rgb(0, 0, 0);
-    padding-top: 68px;
     text-align: center;
+    border: 3px solid rgba(135, 135, 135, 0.067);
+    padding-top: 10px;
     
 }
 
@@ -199,15 +223,17 @@ h2 {
 }
 
 .card2 {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     margin-top: 30px;
-    height: 130px;
+    height: 170px;
     width: 90%;
     font-family: "Inter", sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     border-radius: 30px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 3px solid rgba(135, 135, 135, 0.067);
 }
 
 .card3 {
