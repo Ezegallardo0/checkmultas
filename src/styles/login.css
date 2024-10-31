@@ -6,10 +6,14 @@
 .formLogin {
   gap: 10px;
   max-width: 420px;
-  background-color: #d2d2d2;
+  max-height: 640px;
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+  background-blend-mode: screen;
   padding: 20px;
   border-radius: 20px;
   margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .title {
@@ -21,6 +25,7 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
+  
 }
 
 .title::before, .title::after {
@@ -68,6 +73,7 @@
 }
 
 .formLogin label .input {
+  background-color: #ebecec;
   width: 150%;
   padding: 10px 10px 20px 10px;
   outline: 0;

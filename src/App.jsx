@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './styles/app.css';
 import Navbar from './components/Navbar';
 import DropdownCard from './components/DropdownCard';
@@ -99,7 +99,8 @@ function App() {
         <section className="Cards2">
           <div className='div'>
             <Card title="Monitoreo gratis 24/7" text="Mantenete al tanto de nuevas multas." className="card2" />
-            <Card title="Ahorrá hasta un 50%" text="Accedé a descuentos exclusivos con SinFotoMultas" className="card2" />
+            <Card title="Ahorrá hasta un 50%" text="Accedé a descuentos exclusivos con SinFotoMultas" className="card2"
+            />
           </div>
           <div className='div'>
             <Card title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." className="card2 card3" />

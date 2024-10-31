@@ -4,12 +4,15 @@
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #d2d2d2;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen;
     padding: 20px;
     border-radius: 20px;
     position: relative;
     margin-left: 40%;
     margin-top: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
   }
   
   .title {
@@ -73,6 +76,7 @@
   }
   
   .form label .input {
+    background-color: #ebecec;
     width: 100%;
     padding: 10px 10px 20px 10px;
     outline: 0;
@@ -122,7 +126,7 @@
   
   .log{
     cursor: pointer;
-    color: royalblue
+    color: royalblue;
   }
   @keyframes pulse {
     from {
