@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body{
+body{ /* Ocupa toda la altura de la pantalla */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h4 {
     font-family: "Inter", sans-serif;
