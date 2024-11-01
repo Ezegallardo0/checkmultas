@@ -14,8 +14,8 @@ h4 {
 
 .Dni {
     display: inline;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
     text-align: center;
     font-size: 16px;
     padding: 10px;
@@ -186,6 +186,7 @@ h2 {
 
 .Cards2 {
     display: flex;
+
 }
 
 .xq {
