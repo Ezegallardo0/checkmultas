@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles/app.css';
 import Navbar from './components/Navbar';
-import DropdownCard from './components/DropdownCard';
+import DropdownCard from './components/DropDownCard.jsx';
 
 function App() {
   const [openDropdown, setOpenDropdown] = useState(null);
