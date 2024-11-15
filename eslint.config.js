@@ -1,12 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import dotenv from 'dotenv';
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
 
-dotenv.config();
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: process.env.PORT || 4000, // Usa el puerto de entorno o el 4000 por defecto
-  },
-});
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
