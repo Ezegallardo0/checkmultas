@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-body{ /* Ocupa toda la altura de la pantalla */
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');body{ /* Ocupa toda la altura de la pantalla */
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     background-repeat: no-repeat;
@@ -122,6 +121,10 @@ h2 {
     margin-left: 45%;
     color: white;
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    margin-top: 15px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center !important;
 }
 .Icon4{
     border-radius: 10px;
@@ -131,6 +134,10 @@ h2 {
     margin-left: 45%;
     color: white;
     background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    margin-top: 15px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center !important;
 }
 .Icon3{
     border-radius: 10px;
@@ -140,6 +147,10 @@ h2 {
     margin-left: 45%;
     color: white;
     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    margin-top: 15px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center !important;
 }
 .cheq {
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); 
@@ -217,10 +228,14 @@ h2 {
 .Cards2 {
     display: flex;
 
+
+
 }
 
 .xq {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), 
+                radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%) #989898; /* Ajustar el gradiente */
+
  background-blend-mode: multiply,multiply;
     margin-top: 30px;
     margin-left: 10%;
@@ -264,6 +279,7 @@ h2 {
     padding-top: 10px;
     border-radius: 10px;
     border: 1px solid #aaaaaa;
+
 }
 
 
@@ -310,25 +326,27 @@ h2 {
 }
 
 .reviews-container {
-    background-color: #333;
-    /* Fondo oscuro */
-    padding: 20px;
-    border-radius: 10px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
 .reviews-header h1 {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .reviews-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .card {
@@ -536,6 +554,8 @@ h2 {
     width: 75%;
     font-weight: normal;
     color: #7b7b7b;
+    
+
 }
 .card2 .card3 h4{
     font-size: 0.90rem !important;
@@ -551,6 +571,10 @@ h2 {
     font-weight: normal;
     color: #7b7b7b;
 }
+.card4 h4{
+    margin-left: 19px;
+  
+}	
 .XD1 h4 {
     width: 68% !important;
     margin-left: 22px;
@@ -563,6 +587,73 @@ h2 {
     padding-top: 10px;
 }
 .XD2 p {
-margin-left: 19px; 
+margin-left: 19px;
+text-align: left; 
+}
+.XD1 p {
+    margin-left: 22px;
+    width: 93%;
+    text-align: left;
+}
+.XD p {
+    margin-left: 23.5px;
+    text-align: left;
+}
+ h1.pq {
+    font-size: 31px !important;
+    margin-left: 0px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+   
+}
+.C2r {
+    margin-top: 22px;
+    margin-left: 0px;
+    width: 70%;
+}
+.xq{
+    width: 26.5%;
+    margin-left: 9%;
+}
+.div{
+    margin-left: 47px;
+}
+.div2{
+    margin-left: 37px;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    backdrop-filter: blur(5px); /* Reducir el desenfoque de fondo */
+    -webkit-backdrop-filter: blur(5px); /* Reducir el desenfoque de fondo para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    width: calc(33.333% - 40px); /* Tres tarjetas por fila */
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.review-text {
+    margin-bottom: 10px;
+}
+
+.review-stars {
+    margin-bottom: 10px;
+    color: #FFD700; /* Color dorado para las estrellas */
+}
+
+.review-author {
+    font-weight: bold;
 }
 }

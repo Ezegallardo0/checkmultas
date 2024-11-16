@@ -207,7 +207,7 @@ function App() {
               </div>
               <Card className="XD" title="Ahorrá hasta un 50%" text="Accedé a descuentos exclusivos con SinFotoMultas" /></div>
           </div>
-          <div className='div'>
+          <div className='div2'>
             <div className='card2 card3'>
               <div className="Icon4">
                 <svg
