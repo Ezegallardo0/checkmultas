@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body{ /* Ocupa toda la altura de la pantalla */
     min-height: 100vh; /* Ocupa toda la altura de la pantalla */
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family:  'Helvetica', sans-serif !important;
+}
+p {
+    font-family:  'Helvetica', sans-serif;
 }
 h4 {
     font-family: "Inter", sans-serif;
@@ -111,17 +116,16 @@ h2 {
 }
 
 .cheq {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); 
     height: 200px;
     margin-top: 30px;
-    width: 25%;
+    width: 350px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    border-radius: 30px;
-    border: 3px solid rgba(135, 135, 135, 0.067);
+    border-radius: 15px;
+    border: 1px solid #aaaaaa;
     color: rgb(0, 0, 0);
     margin-left: 10%;
-    text-align: center;
     padding-top: 10px;
 }
 .Icon1{
@@ -143,32 +147,32 @@ h2 {
     color: white;
 }
 .res {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); 
     height: 200px;
     margin-top: 30px;
-    width: 25%;
+    width: 350px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    border-radius: 30px;
+    border-radius: 15px;
     color: rgb(0, 0, 0);
     margin-left: 20px;
-    text-align: center;
-    border: 3px solid rgba(135, 135, 135, 0.067);
+
+     border: 1px solid #aaaaaa;
     padding-top: 10px;
 }
 
 .crea {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); 
     margin-top: 30px;
     margin-right: 90px;
     height: 200px;
-    width: 25%;
+    width: 350px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    border-radius: 30px;
+    border-radius: 15px;
     color: rgb(0, 0, 0);
-    text-align: center;
-    border: 3px solid rgba(135, 135, 135, 0.067);
+
+    border: 1px solid #aaaaaa;
     padding-top: 10px;
     
 }
@@ -224,23 +228,19 @@ h2 {
 }
 
 .card2 {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     margin-top: 30px;
     height: 170px;
-    width: 90%;
+    width: 346px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     border-radius: 30px;
-    text-align: center;
     padding-top: 10px;
     border-radius: 10px;
-    border: 3px solid rgba(135, 135, 135, 0.067);
+    border: 1px solid #aaaaaa;
 }
 
-.card3 {
-    padding-left: 32px;
 
-}
 
 .div {
     margin-left: 120px;
@@ -457,4 +457,86 @@ h2 {
         margin-top: 25px;
         font-size: 15px;
     }
+.cheq {
+    width: 350px;
+    justify-content:left !important;
+    height: 200px;
+
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); 
+}
+.Icon{
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center !important;
+}
+.card4{
+    margin-top: 10px;
+    justify-content:left !important;
+}
+
+.card4 p{
+    font-size: 0.75rem !important; 
+    line-height: 0.75rem !important;
+    margin-left: 20px;
+    width: 75%;
+    font-weight: normal;
+    color: #7b7b7b;
+}
+.div {
+    margin-left: 67px;
+}
+.Icon1{
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center !important;
+}
+.card2 .card3{
+    margin-top: 10px;
+    justify-content:left !important;
+}
+.card2 h4{
+    font-size: 0.90rem !important;
+    line-height: 1.75rem !important;
+    margin-left: 3px;
+    width: 65%;
+    letter-spacing: normal;
+}
+.card2 p{
+    font-size: 0.75rem !important; 
+    line-height: 0.75rem !important;
+    margin-left: 10px;
+    width: 75%;
+    font-weight: normal;
+    color: #7b7b7b;
+}
+.card2 .card3 h4{
+    font-size: 0.90rem !important;
+    line-height: 1.75rem !important;
+    margin-left: 10px;
+    width: 95%;
+}
+.card2 .card3 p{
+    font-size: 0.75rem !important; 
+    line-height: 0.75rem !important;
+    margin-left: 10px;
+    width: 75%;
+    font-weight: normal;
+    color: #7b7b7b;
+}
+.XD1 h4 {
+    width: 68% !important;
+    margin-left: 22px;
+    padding-top: 10px;
+    
+}
+.XD2 h4 {
+    width: 68% !important;
+ 
+    padding-top: 10px;
+}
+.XD2 p {
+margin-left: 19px; 
+}
 }

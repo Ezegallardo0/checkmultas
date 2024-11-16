@@ -107,7 +107,7 @@ function App() {
               <path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3" />
             </svg>
           </div>
-          <Card className="card4" title="Chequeá tu vehículo/moto" text="Ingresá tu patente o DNI para un escaneo gratis." />
+          <Card className="card4" title="Chequeá tu vehículo" text="Ingresá tu patente o DNI para un escaneo gratis." />
         </div>
         <div className="res">
           <div className='Icon'>
@@ -228,7 +228,7 @@ function App() {
                   <circle cx="17" cy="17" r="2" />
                 </svg>
               </div>
-              <Card className="XD" title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." /></div>
+              <Card className="XD1" title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." /></div>
             <div className='card2 card3'>
               <div className="Icon1">
                 <svg
@@ -249,7 +249,7 @@ function App() {
                   <path d="M22 8c0-2.3-.8-4.3-2-6" />
                 </svg>
               </div>
-              <Card className="XD" title="Notificaciones al toque" text="Nunca más te pierdas una fecha de pago ni vencimiento." />
+              <Card className="XD2" title="Notificaciones al toque" text="Nunca más te pierdas una fecha de pago ni vencimiento." />
             </div>
           </div>
         </section>
