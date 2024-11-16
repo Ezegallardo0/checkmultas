@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles/app.css';
 import Navbar from './components/Navbar';
-import DropdownCard from './components/DropdownCard';
+import DropdownCard from './components/DropDownCard.jsx';
 
 function App() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -187,7 +187,7 @@ function App() {
               <Card className="XD" title="Monitoreo gratis 24/7" text="Mantenete al tanto de nuevas multas." />
             </div>
             <div className='card2'>
-              <div className="Icon1">
+              <div className="Icon2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -209,7 +209,7 @@ function App() {
           </div>
           <div className='div'>
             <div className='card2 card3'>
-              <div className="Icon1">
+              <div className="Icon4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -230,7 +230,7 @@ function App() {
               </div>
               <Card className="XD1" title="Gestión familiar y de flotas" text="Monitoreá varios vehículos, DNI o motos en el mismo lugar." /></div>
             <div className='card2 card3'>
-              <div className="Icon1">
+              <div className="Icon3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
