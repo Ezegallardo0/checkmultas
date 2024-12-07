@@ -106,6 +106,7 @@ h2 {
     text-align: center;
     font-family: "Reddit Sans", sans-serif;
     height: auto; /* Ajustar la altura según sea necesario */
+    
 }
 .XD{
     padding-top: 10px;
@@ -453,10 +454,15 @@ h2 {
     font-size: 1rem;
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 100px) and (max-width: 2100px) {
     .homebg {
         padding-top: 6rem; /* md:py-24 */
         padding-bottom: 6rem; /* md:py-24 */
+        width: auto;
+    }
+    .Cards{
+        display: flex;
+        justify-content: space-evenly;
     }
     .Nav h1 {
         padding-top: 17px;
