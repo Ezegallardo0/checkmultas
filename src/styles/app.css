@@ -48,7 +48,7 @@ h4 {
     font-family: "Inter", sans-serif;
     font-weight: 900;
 }
-h2 {
+.Contrl {
     color: aliceblue;
     margin-left: 50px;
     padding-right: 50px;
@@ -402,7 +402,14 @@ h2 {
 }
 
 .PreFre {
-    font-size: 1.4rem;
+    color: aliceblue;
+    margin-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 35px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -520,9 +527,6 @@ h2 {
   
         margin: 0; /* Eliminar el margen para centrar el texto */
         font-size: 14px; /* Ajustar el tamaño de fuente según sea necesario */
-    }
-    h2 {
-        font-size: 91px !important;
     }
     .patente button {
         margin-top: 25px;

@@ -76,7 +76,7 @@ function App() {
     <>
       <Navbar />
       <section className="homebg">
-        <h2>Controlá tus multas, ahorrá plata</h2>
+        <h2 className='Contrl'>Controlá tus multas, ahorrá plata</h2>
         <p className="uni">Unite a miles de conductores que ahorran plata y evitan sorpresas.</p>
         <div className="patente">
           <input className="Dni" placeholder="Ingresa tu Dni o Patente" />
