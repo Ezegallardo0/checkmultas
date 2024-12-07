@@ -236,12 +236,11 @@ h2 {
 .xq {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), 
                 radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%) #989898; /* Ajustar el gradiente */
-
- background-blend-mode: multiply,multiply;
+    background-blend-mode: multiply,multiply;
     margin-top: 30px;
     margin-left: 10%;
     border-radius: 10px;
-    width: 25%;
+    width: 22%;
     height: 260px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
@@ -621,7 +620,6 @@ text-align: left;
     width: 70%;
 }
 .xq{
-    width: 26.5%;
     margin-left: 9%;
 }
 .div{
