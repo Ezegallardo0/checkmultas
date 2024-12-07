@@ -260,14 +260,29 @@ function App() {
           <h1>Más de 500 personas confían en Check multas</h1>
         </div>
         <div className="reviews-grid">
-          {reviews.map((review, index) => (
-            <div key={index} id={`review-${index}`} className="card">
-              <div className="review-text">{review.text}</div>
-              <div className="review-stars">{renderStars(review.stars)}</div>
-              <div className="review-author"><b>{review.author}</b></div>
-            </div>
-          ))}
+  {reviews.map((review, index) => (
+    <div key={index} id={`review-${index}`} className="card">
+      <div className="review-header">
+        <div className="review-author"><b>{review.author}</b></div>
+        <div className="review-stars">
+          <div className="rating">
+            <input value="5" name={`rate-${index}`} id={`star5-${index}`} type="radio" disabled checked={review.stars === 5} />
+            <label title="text" htmlFor={`star5-${index}`}></label>
+            <input value="4" name={`rate-${index}`} id={`star4-${index}`} type="radio" disabled checked={review.stars === 4} />
+            <label title="text" htmlFor={`star4-${index}`}></label>
+            <input value="3" name={`rate-${index}`} id={`star3-${index}`} type="radio" disabled checked={review.stars === 3} />
+            <label title="text" htmlFor={`star3-${index}`}></label>
+            <input value="2" name={`rate-${index}`} id={`star2-${index}`} type="radio" disabled checked={review.stars === 2} />
+            <label title="text" htmlFor={`star2-${index}`}></label>
+            <input value="1" name={`rate-${index}`} id={`star1-${index}`} type="radio" disabled checked={review.stars === 1} />
+            <label title="text" htmlFor={`star1-${index}`}></label>
+          </div>
         </div>
+      </div>
+      <div className="review-text">{review.text}</div>
+    </div>
+  ))}
+</div>
       </div>
       <article className='Questions'>
         <section className='pregu'>

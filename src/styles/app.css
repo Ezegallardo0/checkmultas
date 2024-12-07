@@ -362,16 +362,40 @@ h2 {
 
 .review-text {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .review-stars {
-    margin-bottom: 10px;
     color: #d9e31b;
+    margin-left: 17px;
 }
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
 
 .review-author {
     font-weight: bold;
+    margin-right: auto;
+    padding-top: 10px;
 }
+
 
 .pregu {
     background-color: #444;
@@ -655,11 +679,17 @@ text-align: left;
 }
 
 .review-stars {
-    margin-bottom: 10px;
+
     color: #FFD700; /* Color dorado para las estrellas */
 }
 
 .review-author {
     font-weight: bold;
 }
+}
+
+.review-header {
+    display: flex
+;
+    margin-right: auto;
 }
