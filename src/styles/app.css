@@ -62,7 +62,7 @@ h4 {
 
 .psr {
     border-radius: 10vh;
-    width: 19%;
+    width: 20%;
     display: inline;
     border: none;
     text-align: center;
@@ -228,6 +228,7 @@ h4 {
 
 .Cards2 {
     display: flex;
+    margin-left: 40px
 }
 
 .xq {
@@ -235,7 +236,7 @@ h4 {
                 radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%) #989898; /* Ajustar el gradiente */
     background-blend-mode: multiply,multiply;
     margin-top: 30px;
-    margin-left: 22%;
+    margin-left: 20%;
     border-radius: 10px;
     width: 18%;
     height: 260px;
@@ -321,14 +322,16 @@ h4 {
     text-align: center;
     margin-top: 2vh;
 }
-
+b{
+    color: rgb(50, 46, 46);
+}
 .reviews-container {
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(to top, #183a65 0%, #537895 100%);
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: 1400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
@@ -337,6 +340,7 @@ h4 {
     margin-bottom: 30px;
     font-size: 2rem;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
 }
 
 .reviews-grid {
@@ -686,7 +690,6 @@ text-align: left;
 }
 
 .review-header {
-    display: flex
-;
+    display: flex;
     margin-right: auto;
 }
