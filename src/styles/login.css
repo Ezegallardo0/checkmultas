@@ -37,12 +37,21 @@
   left: 0px;
   background-color: royalblue;
 }
-img,svg{
-  vertical-align: middle;
-  margin-left: 250%;
-  margin-top: -40px;
+.pas {
+  position: relative;
+  margin-top: 12px;
+}
+.pas svg {
+  position: absolute;
+  left: 280px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
+.input {
+  padding-right: 40px; /* Espacio para el ícono */
+}
+
 .title::before {
   width: 18px;
   height: 18px;

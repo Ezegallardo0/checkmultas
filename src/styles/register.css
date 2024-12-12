@@ -14,7 +14,20 @@
     font-family: "Inter", sans-serif;
     font-weight: 600;
   }
+  .pas {
+    position: relative;
   
+  }
+  .pas svg {
+    position: absolute;
+    left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .input {
+    padding-right: 40px; /* Espacio para el ícono */
+  }
   .title {
     font-size: 28px;
     color: royalblue;
