@@ -16,7 +16,6 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
-
 .title {
   font-size: 28px;
   color: royalblue;
@@ -38,7 +37,12 @@
   left: 0px;
   background-color: royalblue;
 }
-
+img,svg{
+  vertical-align: middle;
+  margin-left: 250%;
+  margin-top: -40px;
+  cursor: pointer;
+}
 .title::before {
   width: 18px;
   height: 18px;
@@ -81,7 +85,6 @@
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
-
 .formLogin label .input + span {
   position: absolute;
   left: 10px;

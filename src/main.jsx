@@ -5,7 +5,7 @@ import { BrowserRouter , Routes, Route, } from "react-router-dom";
 import App from './App.jsx'
 import Login from './pages/login.jsx';
 import Register from './pages/register.jsx';
-
+import { createIcons, icons } from 'lucide';
 
 
 createRoot(document.getElementById('root')).render(
