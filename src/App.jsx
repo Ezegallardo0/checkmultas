@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom"
 import './styles/app.css';
 import Navbar from './components/Navbar';
 import DropdownCard from './components/DropDownCard.jsx';
@@ -72,6 +73,17 @@ function App() {
       ));
   };
 
+  const [patente, setPatente] = useState(""); // Aquí cambiamos a patente
+  const navigate = useNavigate(); // Usamos el hook useNavigate para la navegación
+
+  const handleInputChange = (e) => {
+    setPatente(e.target.value); // Guardamos la patente en el estado
+  };
+
+  const handleSubmit = () => {
+    navigate("/cargando", { state: { patente } }); // Usamos navigate para ir a "consultas" pasando la patente
+  };
+
   return (
     <>
       <Navbar />
@@ -79,8 +91,12 @@ function App() {
         <h2 className='Contrl'>Controlá tus multas, ahorrá plata</h2>
         <p className="uni">Unite a miles de conductores que ahorran plata y evitan sorpresas.</p>
         <div className="patente">
-          <input className="Dni" placeholder="Ingresa tu Dni o Patente" />
-          <button className="MA">Consulta tus multas ahora</button>
+          <input className="Dni"
+            maxLength={10}
+            placeholder="Ingresa tu Dni o Patente"
+            onInput={(e) => e.target.value = e.target.value.toUpperCase()} // Asegura que la patente esté en mayúsculas
+            onChange={handleInputChange} />
+          <button className="MA" onClick={handleSubmit}>Consulta tus multas ahora</button>
         </div>
         <button className="psr">+50,000 consultas realizadas este último mes</button>
       </section>
@@ -260,29 +276,29 @@ function App() {
           <h1>Más de 500 personas confían en Check multas</h1>
         </div>
         <div className="reviews-grid">
-  {reviews.map((review, index) => (
-    <div key={index} id={`review-${index}`} className="card">
-      <div className="review-header">
-        <div className="review-author"><b>{review.author}</b></div>
-        <div className="review-stars">
-          <div className="rating">
-            <input value="5" name={`rate-${index}`} id={`star5-${index}`} type="radio" disabled checked={review.stars === 5} />
-            <label title="text" htmlFor={`star5-${index}`}></label>
-            <input value="4" name={`rate-${index}`} id={`star4-${index}`} type="radio" disabled checked={review.stars === 4} />
-            <label title="text" htmlFor={`star4-${index}`}></label>
-            <input value="3" name={`rate-${index}`} id={`star3-${index}`} type="radio" disabled checked={review.stars === 3} />
-            <label title="text" htmlFor={`star3-${index}`}></label>
-            <input value="2" name={`rate-${index}`} id={`star2-${index}`} type="radio" disabled checked={review.stars === 2} />
-            <label title="text" htmlFor={`star2-${index}`}></label>
-            <input value="1" name={`rate-${index}`} id={`star1-${index}`} type="radio" disabled checked={review.stars === 1} />
-            <label title="text" htmlFor={`star1-${index}`}></label>
-          </div>
+          {reviews.map((review, index) => (
+            <div key={index} id={`review-${index}`} className="card">
+              <div className="review-header">
+                <div className="review-author"><b>{review.author}</b></div>
+                <div className="review-stars">
+                  <div className="rating">
+                    <input value="5" name={`rate-${index}`} id={`star5-${index}`} type="radio" disabled checked={review.stars === 5} />
+                    <label title="text" htmlFor={`star5-${index}`}></label>
+                    <input value="4" name={`rate-${index}`} id={`star4-${index}`} type="radio" disabled checked={review.stars === 4} />
+                    <label title="text" htmlFor={`star4-${index}`}></label>
+                    <input value="3" name={`rate-${index}`} id={`star3-${index}`} type="radio" disabled checked={review.stars === 3} />
+                    <label title="text" htmlFor={`star3-${index}`}></label>
+                    <input value="2" name={`rate-${index}`} id={`star2-${index}`} type="radio" disabled checked={review.stars === 2} />
+                    <label title="text" htmlFor={`star2-${index}`}></label>
+                    <input value="1" name={`rate-${index}`} id={`star1-${index}`} type="radio" disabled checked={review.stars === 1} />
+                    <label title="text" htmlFor={`star1-${index}`}></label>
+                  </div>
+                </div>
+              </div>
+              <div className="review-text">{review.text}</div>
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="review-text">{review.text}</div>
-    </div>
-  ))}
-</div>
       </div>
       <article className='Questions'>
         <section className='pregu'>

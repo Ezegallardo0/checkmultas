@@ -1,0 +1,58 @@
+
+.patent{
+    background-image: linear-gradient(to top, #d3dde8 0%, #e7f0fd 100%);
+    width: 49%;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 1.5%;
+    border-radius: 7px;
+    
+}
+.menu{
+    display: flex;
+    gap: "10px" ;
+}
+.pat{
+   padding-left: 2rem;
+   padding-top: 2rem;
+   font-size: 20px;
+   font-weight: 600;
+   color: black;
+}
+.Nc {
+    display: inline-block;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 200px;
+    height: 45px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-left: 53%;
+    margin-top: 20px;
+}
+.mensaje-container {
+    background-color: #c3d6f0;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  
+  .mensaje-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .mensaje-texto {
+    font-size: 16px;
+    color: #003366;
+  }
+  

@@ -70,9 +70,6 @@ h1 {
 .Cr:hover {
     background: linear-gradient(135deg, #1D4ED8, #1E40AF); /* Gradiente de azul más oscuro al pasar el ratón */
 }
-.buton{
-
-}
 .buton button {
     margin-right: 15px;
     margin-top: 25px;
