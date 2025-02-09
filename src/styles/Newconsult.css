@@ -15,7 +15,7 @@
     margin-left: 25%;
     border-radius: 20px;
 }
-h2n{
+.h2n{
     color: aliceblue;
     margin-left: 16rem;
     padding-right: 70px;
@@ -23,7 +23,7 @@ h2n{
     padding-top: 10px;
     font-family: "Reddit Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: -0.5px;
     width: 50%;
 }

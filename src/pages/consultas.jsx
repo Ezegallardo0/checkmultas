@@ -24,6 +24,7 @@ const Consultas = () => {
                     <p>Nueva Consulta  <Search /> </p>
                 </button>
                 </div>
+                <hr style={{ border: "0.5px solid #ccc", width: "100%" }} />
                 <div className="mensaje-container">
                     <p className="mensaje-titulo">
                         ¡Hola! <span role="img" aria-label="wave">👋</span>
@@ -36,6 +37,9 @@ const Consultas = () => {
                     </p>
                 </div>
                 </section>
+                <main>
+                    
+                </main>
         </div>
     );
 };
