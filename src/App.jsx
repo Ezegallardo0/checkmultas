@@ -73,15 +73,16 @@ function App() {
       ));
   };
 
-  const [patente, setPatente] = useState(""); // Aquí cambiamos a patente
-  const navigate = useNavigate(); // Usamos el hook useNavigate para la navegación
+  const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
-    setPatente(e.target.value); // Guardamos la patente en el estado
+    setInputValue(e.target.value.toUpperCase()); // Convertir a mayúsculas automáticamente
   };
 
   const handleSubmit = () => {
-    navigate("/cargando", { state: { patente } }); // Usamos navigate para ir a "consultas" pasando la patente
+    if (inputValue.trim() === "") return; // Evitar navegación si está vacío
+    navigate("/consultas", { state: { inputValue } });
   };
 
   return (
@@ -94,9 +95,11 @@ function App() {
           <input className="Dni"
             maxLength={10}
             placeholder="Ingresa tu Dni o Patente"
-            onInput={(e) => e.target.value = e.target.value.toUpperCase()} // Asegura que la patente esté en mayúsculas
+            value={inputValue}
             onChange={handleInputChange} />
-          <button className="MA" onClick={handleSubmit}>Consulta tus multas ahora</button>
+          <button className="MA" onClick={handleSubmit}>
+            Consulta tus multas ahora
+          </button>
         </div>
         <button className="psr">+50,000 consultas realizadas este último mes</button>
       </section>

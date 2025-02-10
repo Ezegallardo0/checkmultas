@@ -3,28 +3,30 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import "../styles/consultas.css";
 import { Search } from 'lucide-react';
+import Register from './register';
 
 const Consultas = () => {
     const location = useLocation();
-    const patente = location.state?.patente;
-    const Dni = location.state?.Dni;
     const navigate = useNavigate();
-
-    const handleSubmit = () =>{
-        navigate("/nuevaconsulta")
-    }
+    const inputValue = location.state?.inputValue || "";
 
     return (
         <div>
             <Navbar />
             <section className='patent'>
                 <div className='menu'>
-                <p className='pat'>Patente  {patente} {Dni} </p>
-                <button className='Nc' onClick={handleSubmit}>
-                    <p>Nueva Consulta  <Search /> </p>
-                </button>
+                    {inputValue ? (
+                        <p className="pat">Patente / DNI: <strong>{inputValue}</strong></p>
+                    ) : (
+                        <p className="pat">No se ingresó ninguna patente/DNI.</p>
+                    )}
+
+                    <button className='Nc' onClick={() => navigate("/nuevaconsulta")}>
+                        <p>Nueva Consulta  <Search /> </p>
+                    </button>
                 </div>
                 <hr style={{ border: "0.5px solid #ccc", width: "100%" }} />
+
                 <div className="mensaje-container">
                     <p className="mensaje-titulo">
                         ¡Hola! <span role="img" aria-label="wave">👋</span>
@@ -36,10 +38,10 @@ const Consultas = () => {
                         Regístrate en <b>CheckMultas</b> y accede a importantes descuentos en tus multas a través de nuestra alianza con <b>SinFotoMultas</b>.
                     </p>
                 </div>
-                </section>
-                <main>
-                    
-                </main>
+            </section>
+            <div className="register-section">
+                    <Register hideNavbar={true} />
+                </div>
         </div>
     );
 };
