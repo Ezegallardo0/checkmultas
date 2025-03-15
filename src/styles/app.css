@@ -67,7 +67,7 @@ h4 {
 
 .psr {
     border-radius: 10vh;
-    width: 20%;
+    width: 22%;
     display: inline;
     border: none;
     text-align: center;
@@ -227,8 +227,9 @@ h4 {
 }
 
 .Cards {
-    display: flex;
+    margin-right: 10%;
     justify-content: space-evenly;
+
 }
 
 .Cards2 {

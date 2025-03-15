@@ -44,6 +44,6 @@ const Consultas = () => {
                 </div>
         </div>
     );
-};
+}; 
 
 export default Consultas;
