@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/register.css';
 import Navbar from '../components/Navbar';
+import FaqButton from '../components/FaqButton';
 
 const Register = ({ hideNavbar = false }) => {
   const [firstname, setFirstname] = useState('');
@@ -60,6 +61,7 @@ const Register = ({ hideNavbar = false }) => {
           ¿Ya tenes una cuenta? <a className='log' onClick={() => window.location.href = '/login'}>Iniciar sesión</a>
         </p>
       </form>
+      <FaqButton />
     </>
   );
 };
