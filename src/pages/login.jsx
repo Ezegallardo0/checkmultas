@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/login.css';
 import Navbar from '../components/Navbar';
+import FaqButton from '../components/FaqButton';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -70,6 +71,7 @@ const Login = () => {
             </p>
           </div>
         </form>
+        <FaqButton />
       </div>
     </>
   );

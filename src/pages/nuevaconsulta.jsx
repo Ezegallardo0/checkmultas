@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import "../styles/Newconsult.css"
 import { useNavigate } from 'react-router-dom';
+import FaqButton from '../components/FaqButton';
 
 
 const Newconsult = () => {
@@ -31,6 +32,7 @@ const Newconsult = () => {
                     />
                     <button className='MA' onClick={handleSubmit}>Consulta tus multas ahora</button>
                 </div>
+                <FaqButton />
             </section>
         </>
     )

@@ -1,0 +1,72 @@
+/* Contenedor general de todas las preguntas */
+.preguntas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;              /* Espacio entre preguntas */
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;     /* Evita scroll horizontal */
+  /* Si tu modal es muy alto, podés limitar la altura total aquí: */
+  /* max-height: 80vh; */
+  /* overflow-y: auto; */
+}
+
+/* Cada dropdown-card ocupa todo el ancho */
+.dropdown-card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+/* Encabezado de la pregunta */
+.dropdown-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  box-sizing: border-box;
+  white-space: normal;     /* Salto de línea si es muy larga */
+  word-wrap: break-word;
+  gap: 8px;
+}
+
+/* Ícono (+ / -) */
+.dropdown-header span {
+  font-size: 16px;
+  color: #ff2525;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido de la respuesta */
+.dropdown-content {
+  background: #fafafa;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  /* La animación la manejamos inline con maxHeight + transition */
+}
+
+/* Ajuste extra para el <p> interno */
+.dropdown-content p {
+  margin: 0; /* Para evitar espacio extra */
+  padding: 12px 16px; /* Espacio interno en la respuesta */
+}
+
+/* Rotar el ícono cuando está abierto */
+.dropdown-card.open .dropdown-header span {
+  transform: rotate(45deg);
+}

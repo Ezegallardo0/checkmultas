@@ -2,26 +2,10 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom"
 import './styles/app.css';
 import Navbar from './components/Navbar';
-import DropdownCard from './components/DropDownCard.jsx';
+import FaqButton from './components/FaqButton';
 
 function App() {
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const handleToggle = (index) => {
-    if (isTransitioning) return;
-
-    if (openDropdown === index) {
-      setOpenDropdown(null);
-    } else {
-      setIsTransitioning(true);
-      setOpenDropdown(null);
-      setTimeout(() => {
-        setOpenDropdown(index);
-        setIsTransitioning(false);
-      }, 300); // Ajusta este valor según la duración de la transición
-    }
-  };
 
   const reviews = [
     {
@@ -303,60 +287,8 @@ function App() {
           ))}
         </div>
       </div>
-      <article className='Questions'>
-        <section className='pregu'>
-          <h2 className='PreFre'>Preguntas frecuentes</h2>
-        </section>
-        <section className='preguntas'>
-          <DropdownCard
-            title='¿Es legal CheckMultas?'
-            text='Si, nuestra empresa es 100% legal y transparente, no hay letra chica en nuestro servicio.'
-            isOpen={openDropdown === 0}
-            onToggle={() => handleToggle(0)}
-          />
-          <DropdownCard
-            title='¿Cómo funciona el monitoreo automático gratuito de CheckMultas?'
-            text='Multabot monitorea los registros de infracciones de Capital Federal y Provincia de Buenos Aires. No manipulamos información por nuestra cuenta.'
-            isOpen={openDropdown === 1}
-            onToggle={() => handleToggle(1)}
-          />
-          <DropdownCard
-            title='¿Qué tipos de notificaciones recibiré y cómo las recibiré?'
-            text='Vamos a enviarte notificaciones de nuevas infracciones y también recordatorios de vencimientos próximos.'
-            isOpen={openDropdown === 2}
-            onToggle={() => handleToggle(2)}
-          />
-          <DropdownCard
-            title='¿Puedo monitorear más de un vehículo?'
-            text='Podés tener vehículos o DNI ilimitados por cuenta.'
-            isOpen={openDropdown === 3}
-            onToggle={() => handleToggle(3)}
-          />
-          <DropdownCard
-            title='¿Puedo monitorear mi documento DNI?'
-            text='Sí! Monitoreo de DNI también está disponible.'
-            isOpen={openDropdown === 4}
-            onToggle={() => handleToggle(4)}
-          />
-          <DropdownCard
-            title='¿Multabot ofrece descuentos en multas?'
-            text='A través de nuestra alianza con SinFotoMultas los usuarios de Multabot pueden acceder a importantes descuentos en sus infracciones.'
-            isOpen={openDropdown === 5}
-            onToggle={() => handleToggle(5)}
-          />
-          <DropdownCard
-            title='¿Puedo monitorear múltiples vehículos y cómo lo hago?'
-            text='Si! Podes monitorear hasta 5 vehículos de manera gratuita. Para crearlos solo debes acceder a "Mis bots" y hacer clic en "Nuevo bot"'
-            isOpen={openDropdown === 6}
-            onToggle={() => handleToggle(6)}
-          />
-          <DropdownCard
-            title='¿Multabot ofrece cobertura en qué áreas y tiene planes de expansión?'
-            text='Por ahora ofrecemos servicio para Capital Federal y Provincia de Buenos Aires. CheckMultas será nacional en poco tiempo.'
-            isOpen={openDropdown === 7}
-            onToggle={() => handleToggle(7)}
-          />
-        </section>
+      <article>
+        <FaqButton />
       </article>
     </>
   );

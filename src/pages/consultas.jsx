@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import "../styles/consultas.css";
 import { Search } from 'lucide-react';
 import Register from './register';
+import FaqButton from '../components/FaqButton';
 
 const Consultas = () => {
     const location = useLocation();
@@ -42,6 +43,7 @@ const Consultas = () => {
             <div className="register-section">
                     <Register hideNavbar={true} />
                 </div>
+                <FaqButton />
         </div>
     );
 }; 

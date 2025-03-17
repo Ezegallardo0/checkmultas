@@ -1,23 +1,48 @@
-import PropTypes from 'prop-types';
+import React, { useRef, useEffect, useState } from 'react';
+import '../styles/DropDownCard.css'
 
-function DropdownCard({ title, text, isOpen, onToggle }) {
+/**
+ * title: Título de la pregunta
+ * text: Contenido de la respuesta
+ * isOpen: boolean que indica si está abierta la respuesta
+ * onToggle: función para alternar abrir/cerrar
+ */
+const DropdownCard = ({ title, text, isOpen, onToggle }) => {
+  const contentRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState('0px');
+
+  useEffect(() => {
+    if (isOpen) {
+      // Calcula la altura real del contenido y la asigna para animar
+      const scrollHeight = contentRef.current?.scrollHeight || 0;
+      setMaxHeight(`${scrollHeight}px`);
+    } else {
+      // Cierra (altura 0)
+      setMaxHeight('0px');
+    }
+  }, [isOpen]);
+
   return (
     <div className={`dropdown-card ${isOpen ? 'open' : ''}`}>
-      <h4 onClick={onToggle} className="dropdown-title">
+      <button className="dropdown-header" onClick={onToggle}>
         {title}
-      </h4>
-      <div className="dropdown-content">
-        <p className="dropdown-text">{text}</p>
+        <span>{isOpen ? '-' : '+'}</span>
+      </button>
+
+      {/* Contenedor que animamos con max-height dinámico */}
+      <div
+        className="dropdown-content"
+        ref={contentRef}
+        style={{
+          maxHeight: maxHeight,
+          transition: 'max-height 0.3s ease',
+          overflow: 'hidden',
+        }}
+      >
+        <p>{text}</p>
       </div>
     </div>
   );
-}
-
-DropdownCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  onToggle: PropTypes.func.isRequired,
 };
 
 export default DropdownCard;
